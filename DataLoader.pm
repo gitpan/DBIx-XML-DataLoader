@@ -126,7 +126,7 @@ if(!$xml){warn "we had no xml sent in";return;}
 if($xml =~ /^http:/){
 
 my         $ua = new LWP::UserAgent;
-         $ua->agent("XMLtoSQL/1.0 " . $ua->agent);
+         $ua->agent("DBIx_XML_DataLoader/1.0b " . $ua->agent);
 my $req = new HTTP::Request(GET=>$xml);
 my $res = $ua->request($req);
 if ($res->is_success){

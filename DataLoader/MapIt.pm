@@ -43,7 +43,7 @@ no warnings;  # warnings are turned off because the XML::XPath
 # added http requests for map files
 if($filename =~ /http/){
 my         $ua = new LWP::UserAgent;
-         $ua->agent("XMLtoSQL/1.0 " . $ua->agent);
+         $ua->agent("DBIx::XML::DataLoader/1.0b " . $ua->agent);
 my $req = new HTTP::Request(GET=>$filename);
 my $res = $ua->request($req);
 
@@ -358,7 +358,7 @@ __END__
 
 =for html <b>or</b>
 
-	use XML::XMLtoSQL::MapIt;
+	use DBIx::XML::DataLoader::MapIt;
 
         my $m=MapIt->new();
 
@@ -372,37 +372,39 @@ __END__
 
 =head1	DESCRIPTION
 	
-	MapIt.pm is used primarily by XMLtoSQL.pm for extracting mapping information from
+	MapIt.pm is used primarily by DataLoader.pm for extracting mapping information from
 	a xml map file. The mapping information can be used for querying a database for
 	the purpose of reconstructing a xml document(see the sample script query_sql.cb).
 
 =head1  Map Rules
 
 =for man 
-	see man page XMLtoSQL::XMLtoSQL for complete map rules and sample map file.
+	see man page DBIx::XML::DataLoader::DB for complete map rules and sample map file.
 
-=for html see man page <a href="XMLtoSQL.html#example simple mapfile">XMLtoSQL::XMLtoSQL<a/> for complete map rules and sample map file.
+=for html see man page <a href="DataLoader.html#example simple mapfile">DBIx::XML::DataLoader<a/> for complete map rules and sample map file.
 
 =head1  Also see man page for
 
 
 =for man
-	XML::XMLtoSQL and XML::XMLtoSQL::XMLWriter
+	DBIx::XML::DataLoader and DBIx::XML::DataLoader::XMLWriter
 
 
 =for html
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-href="XMLtoSQL.html">XML::XMLtoSQL</a> and <a href="XMLWriter.html">XML::XMLtoSQL::XMLWriter</a>	
+href="DataLoader.html">DBIx::XML::DataLoader</a> and <a href="XMLWriter.html">DBIx::XML::DataLoader::XMLWriter</a>	
 
 
 =head1  Sample Scripts
 
 =for man
-	query_sql.cb	
+	query_db.pl	
+=for man
+	test_mapit.pl.pl	
 
 =for html
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="sample_bin/query_sql.cb">query_sql.cb<a/>, and <a href="sample_bin/test_mapit.cb">test_mapit.cb<a/> 
+query_db.pl, and test_mapit.pl
 
 =for html
 <p><hr><p><p><P>

@@ -6,7 +6,7 @@ use strict;
 ####################################################################################
 ####################################################################################
 ##									
-##  This is a working demonstration of how to use XMLtoSQL::XMLtoSQL  		
+##  This is a working demonstration of how to use DBIx::XML::DataLoader  		
 ##									
 ##  This script demonstrates how to use the dbmode sqlloader (ie. dbmode=>"sqloader") 
 ##  This will create a data suitable for printing to a DAT file for the Oracle
@@ -36,7 +36,6 @@ $| = 1;
 my $mapper=DBIx::XML::DataLoader->new(dbmode=>"insert", dbprint=>"dbandprint", map=>"./maps/map1.xml");
 
 
-#my $mapper=XMLtoSQL->new(dbmode=>"insertupdate", dbprint=>"dbandprint",map=>"test_map.xml");
 
 #########
 ####	here I  read the contents of a directory

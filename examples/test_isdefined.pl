@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 #############################################################
-## This file demonstrates the XMLtoSQL::IsDefined module
+## This file demonstrates the DBIx::XML::DataLoader::IsDefined module
 #############################################################
 
  use DBIx::XML::DataLoader::IsDefined;

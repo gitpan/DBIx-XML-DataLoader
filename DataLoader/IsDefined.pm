@@ -37,7 +37,7 @@ __END__
 
 =head1 NAME
 
-        XMLtoSQL::IsDefined
+        DBIx::XML::DataLoader::IsDefined
 
 
 =head1 SYNOPSIS
@@ -83,7 +83,7 @@ __END__
 
 =head1 DESCRIPTION
 
-        This module is used primarily inside XMLtoSQL.pm . It checks to
+        This module is used primarily inside DBIx::XML::DataLoader. It checks to
 	see if a node value is the number zero or if the variable is 
 	defined but empty. If the variable is defined but empty then undef is 
 	returned by the module.

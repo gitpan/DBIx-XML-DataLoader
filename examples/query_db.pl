@@ -32,7 +32,7 @@ use warnings;
 ##
 ##  The resulting data will be passed to the XMLWriter module
 ##  
-##  Other Modules in the XMLtoSQL packaged that are used directly from this script
+##  Other Modules in the DBIx::XML::DataLoader packaged that are used directly from this script
 ##  are Date
 ##
 ##

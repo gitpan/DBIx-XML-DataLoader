@@ -6,7 +6,7 @@ use warnings;
 
 ########################################################
 ## this file demonstrates the different subroutine 
-## avaliable in XMLtoSQL::Date
+## avaliable in DBIx::XML::DataLoader::Date
 #########################################################
 
 use DBIx::XML::DataLoader::Date;

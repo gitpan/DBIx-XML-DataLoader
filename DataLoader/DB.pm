@@ -293,12 +293,12 @@ __END__
 
 =head1 NAME
 
-	XML::XMLtoSQL::DB
+	DBIx::XML::DataLoader::DB
 
 
 =head1 SYNOPSIS
 
-	use XML::XMLtoSQL::DB;
+	use DBIx::XML::DataLoader::DB;
 	my $db=DB->new(dbmode=>"insertupdate", dbprint=>"dbprint");
 	
 	my $dbh=$db->DBConnect($DBLOG, $DBPASS, $DATA_SOURCE);
@@ -315,15 +315,15 @@ __END__
 	use DBI::Oracle to reflect your database choice 
 
 =for man	
-	This module is used primarily inside XMLtoSQL.pm . It is also used in the sample script query_sql.cb
+	This module is used primarily inside DataLoader.pm . It is also used in the sample script query_db.pl
 
 =for text	
-	This module is used primarily inside XMLtoSQL.pm . It is also used in the sample script query_sql.cb
+	This module is used primarily inside DataLoader.pm . It is also used in the sample script query_db.pl
 
 =for html	
 <pre>
-       This module is used primarily inside XMLtoSQL.pm. It is also used in the sample 
-       script <a href="sample_bin/query_sql.cb">query_sql.cb</a></pre>
+       This module is used primarily inside DataLoader.pm. It is also used in the sample 
+       script query_cb.pl</pre>
 
 	DBInsertUpdate needs passed to a hash containing a arrayref to a array 
 	of hashes containing the data that will be worked with, and dbconnections 
@@ -373,21 +373,21 @@ __END__
 
 =for html 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="XMLWriter.html">XML::XMLtoSQL::XMLWriter</a>,&nbsp and <a
-href="XMLtoSQL.html">XML::XMLtoSQL<a/>
+<a href="XMLWriter.html">DBIx::XML::DataLoader::XMLWriter</a>,&nbsp and <a
+href="DataLoader.html">DBIx::XML::DataLoader<a/>
 
 
 =for man 
-	XML::XMLtoSQL::XMLWriter and XML::XMLtoSQL
+	DBIx::XML::DataLoader::XMLWriter and DBIx::XML::DataLoader
 
 =for text 
-	XML::XMLtoSQL::XMLWriter and XML::XMLtoSQL
+	DBIx::XML::DataLoader::XMLWriter and DBIx::XML::DataLoader
 
 =head1 Sample Scripts
 
-=for man query_sql.cb
+=for man query_db.pl
 
-=for text query_sql.cb
+=for text query_db.pl
 
 =for html
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

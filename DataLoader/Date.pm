@@ -97,7 +97,7 @@ __END__
 
 =head1 NAME
 
-        XMLtoSQL::Date
+        DBIx::XML::DataLoader::Date
 
 
 =head1 SYNOPSIS
@@ -132,7 +132,7 @@ __END__
 
 =head1 DESCRIPTION
 
-	This module is for convenience use by XMLWriter and XMLtoSQL.
+	This module is for convenience use by DBIx::XML::DataLoader::XMLWriter and DBIx::XML::DataLoader.
 	It's purpose is most likly replicated by other more standard modules
 	
 

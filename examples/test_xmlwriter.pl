@@ -6,7 +6,7 @@ use warnings;
 
 ############################################################################
 ##
-##  This script demonstrates how to use XMLtoSQL::XMLWriter
+##  This script demonstrates how to use DBIx::XML::DataLoader::XMLWriter
 ##  The hash %sample below is passed along with the variable $rootnode
 ##  directly to the XMLWriter module. The module passes xml suitable for 
 ##  printing also look at query_sql.cb for a more complete example including
